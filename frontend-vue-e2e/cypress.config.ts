@@ -7,7 +7,7 @@ export default defineConfig({
     ...nxE2EPreset(__filename, {
       cypressDir: 'src',
       bundler: 'vite',
-      webServerCommands: { default: 'nx run nx-book-api:serve' },
+      webServerCommands: { default: 'nx run frontend-vue:serve' },
     }),
     baseUrl: 'http://localhost:4200',
   },

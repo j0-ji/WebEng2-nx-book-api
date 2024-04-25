@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('nx-book-api-e2e', () => {
+describe('frontend-vue-e2e', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
