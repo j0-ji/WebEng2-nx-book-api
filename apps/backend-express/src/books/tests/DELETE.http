@@ -1,0 +1,3 @@
+### DELETE book by ID - 1
+DELETE http://localhost:3000/api/books/660adc5a597f30d6530228b2
+Content-Type: application/json

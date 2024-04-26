@@ -1,0 +1,43 @@
+### POST - 1
+POST http://localhost:3001/api/books
+Content-Type: application/json
+
+{
+  "title": "Marsianer",
+  "author": "some dude",
+  "genre": "sci-fi",
+  "year": 2012
+}
+
+### POST - 2
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "alpha",
+  "author": "kollegah",
+  "genre": "mindset",
+  "year": 6969
+}
+
+### POST - 3
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "Die Baltimore-Akte",
+  "author": "Verschwörungstheoretiker",
+  "genre": "wahrheit",
+  "year": 42
+}
+
+### POST - 4
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+  "title": "totalausfall",
+  "author": "bruh",
+  "genre": "sci-fi",
+  "year": 6971
+}

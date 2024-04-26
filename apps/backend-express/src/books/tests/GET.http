@@ -1,0 +1,7 @@
+### GET all books
+GET http://localhost:3000/api/books
+Content-Type: application/json
+
+### GET book by ID - 1
+GET http://localhost:3000/api/books/660adc5a597f30d6530228b3
+Content-Type: application/json
