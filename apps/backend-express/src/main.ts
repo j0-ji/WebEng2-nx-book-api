@@ -1,8 +1,5 @@
-'use strict';
-
-
-import express from 'express';
-import bodyParser from 'body-parser';
+import * as express from 'express';
+import * as bodyParser from 'body-parser';
 import { connectToMongoDB } from './mongodb/controllers/db.controller';
 import { router } from './books/controllers/books.contorller';
 
