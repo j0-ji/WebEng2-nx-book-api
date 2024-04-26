@@ -1,0 +1,8 @@
+### PATCH book by ID - correct
+PATCH http://localhost:3000/api/books/660bc9de2e44001081dadef8
+Content-Type: application/json
+
+{
+  "title": "test",
+  "author": "test"
+}

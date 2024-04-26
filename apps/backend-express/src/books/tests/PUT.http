@@ -1,0 +1,21 @@
+### PUT book by ID - correct
+PUT http://localhost:3000/api/books/660adc5a597f30d6530228b3
+Content-Type: application/json
+
+{
+  "title": "Dune",
+  "author": "Siri",
+  "genre": "Verschwörungstheorien",
+  "year": 2004
+}
+
+### PUT book by ID - incorrect
+PUT http://localhost:3000/api/books/660adc5a597f30d6530228b3
+Content-Type: application/json
+
+{
+  "title": "Dune",
+  "author": "Siri",
+  "year": 2004
+}
+
