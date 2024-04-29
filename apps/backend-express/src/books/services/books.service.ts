@@ -3,8 +3,8 @@
 import { client } from '../../mongodb/controllers/db.controller';
 import { type Book, type CreateBookDto, type UpdateBookDto } from '@web/contract/books.model';
 
-const databaseName: string = 'library';
-const collectionName: string = 'books';
+const databaseName = 'library';
+const collectionName = 'books';
 
 const collection = client.db(databaseName).collection(collectionName);
 
