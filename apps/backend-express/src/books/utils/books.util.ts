@@ -1,4 +1,4 @@
-function checkIfCreateBookDto(obj:Object) {
+function checkIfCreateBookDto(obj) {
     return (
         Object.keys(obj).length === 4 &&
         'title' in obj && typeof obj['title'] === 'string' &&
@@ -8,7 +8,7 @@ function checkIfCreateBookDto(obj:Object) {
     );
 }
 
-function checkIfUpdateBookDto(obj:Object) {
+function checkIfUpdateBookDto(obj) {
     let count = 0;
     if('title' in obj && typeof obj['title'] === 'string') {
         count++;
