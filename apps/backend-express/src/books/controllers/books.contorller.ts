@@ -46,7 +46,7 @@ router.post('/', async (req: Request, res: Response) => {
         try {
             const serviceResponse = await bookService.createBook(bookDto);
             if (serviceResponse.result.acknowledged) {
-                let _id = serviceResponse.result.insertedId.toString();
+                const _id = serviceResponse.result.insertedId.toString();
                 return res.status(200).json({_id, ...bookDto});
             } else {
                 return res.status(500).send('failed adding book');
