@@ -4,11 +4,16 @@
   "include": [
     "src/**/*.ts",
   ],
+  "exclude": ["jest.config.ts",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ],
   "references": [],
   "compilerOptions": {
     "esModuleInterop": true,
-    "outDir": "./node_modules/.out-tsc",
     "verbatimModuleSyntax": true,
+    "outDir": "./node_modules/.out-tsc",
+    "types": ["node", "express", "body-parser"],
     "typeRoots": [
       "../libs/contract/**"
     ],
