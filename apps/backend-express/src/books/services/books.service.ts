@@ -1,7 +1,7 @@
 'use strict';
 
 import { client } from '../../mongodb/controllers/db.controller';
-import { type Book, type CreateBookDto, type UpdateBookDto } from '@web/contract/books.model';
+import { type Book, type CreateBookDto, type UpdateBookDto } from '@nx-book-api/contract';
 
 const databaseName = 'library';
 const collectionName = 'books';

@@ -1,7 +1,7 @@
 'use strict';
 
 import express, {type Request, type Response} from 'express';
-import { type Book, type CreateBookDto, type UpdateBookDto } from '@web/contract/books.model';
+import { type Book, type CreateBookDto, type UpdateBookDto } from '@nx-book-api/contract';
 import { checkIfUpdateBookDto, checkIfCreateBookDto } from "../utils/books.util";
 import { BookService } from "../services/books.service";
 import { ObjectId } from 'mongodb';

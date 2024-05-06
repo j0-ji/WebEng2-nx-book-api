@@ -1,21 +1,16 @@
 {
   "extends": "../../tsconfig.base.json",
   "files": [],
-  "include": [
-    "src/**/*.ts",
+  "include": [],
+  "references": [
+    {
+      "path": "tsconfig.app.json",
+    },
   ],
-  "exclude": ["jest.config.ts",
-    "src/**/*.spec.ts",
-    "src/**/*.test.ts"
-  ],
-  "references": [],
   "compilerOptions": {
     "esModuleInterop": true,
-    "verbatimModuleSyntax": true,
-    "outDir": "./node_modules/.out-tsc",
-    "types": ["node", "express", "body-parser"],
     "typeRoots": [
-      "../libs/contract/**"
-    ],
-  },
+      "../../libs/contract/**"
+    ]
+  }
 }

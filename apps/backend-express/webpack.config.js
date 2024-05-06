@@ -1,10 +1,9 @@
 const { NxWebpackPlugin } = require('@nx/webpack');
 const { join } = require('path');
-console.log(join(__dirname, '.assets'))
 
 module.exports = {
   output: {
-    path: join(__dirname, '../dist/apps'),
+    path: join(__dirname, '../../dist/apps/backend'),
   },
   plugins: [
     new NxWebpackPlugin({
@@ -12,7 +11,7 @@ module.exports = {
       compiler: 'tsc',
       main: './src/main.ts',
       tsConfig: './tsconfig.json',
-      assets: [`${__dirname}/src/assets`],
+      assets: ['./src/assets'],
       optimization: false,
       outputHashing: 'none',
     }),
